@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "5.0"
   
   spec.requires_arc 	= false
-  spec.ios.framework 	= "UIKit","UIView+Hierarchy"
+  spec.ios.frameworks 	= "UIKit","UIView+Hierarchy"
   spec.xcconfig 		= { "FRAMEWORK_SEARCH_PATHS" => "$(inherited)" }
   
   spec.source_files 			= "UIView+Hierarchy.framework/Headers/*.h"
