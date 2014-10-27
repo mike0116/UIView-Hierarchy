@@ -1,17 +1,19 @@
-Pod::Spec.new do |s|
-  s.name         = "UIView+Hierarchy"
-  s.version      = "0.0.1"
-  s.summary      = "A short description of UIView+Hierarchy."
-  s.homepage     = "https://github.com/mike0116/UIView-Hierarchy"
-  s.license      = "MIT"
-  s.author       = { "Mike Shih" => "mikefishs@yahoo.com.tw" }
+Pod::Spec.new do |spec|
+  spec.name         = "UIView+Hierarchy"
+  spec.version      = "0.0.1"
+  spec.author       = { "Mike Shih"}
+  spec.license      = "MIT"
+  spec.homepage     = "https://github.com/mike0116/UIView-Hierarchy"
+  spec.source       = { :git => "https://github.com/mike0116/UIView-Hierarchy.git", :tag => s.version.to_s }
+  spec.summary      = "A short description of UIView+Hierarchy."
   
-  s.platform     = :ios, "5.0"
-  s.source       = { :git => "https://github.com/mike0116/UIView-Hierarchy.git", :tag => "0.0.1" }
-  s.source_files = "UIView+Hierarchy.framework/Headers/*.h"
-  s.preserve_paths = "UIView+Hierarchy.framework"
-  s.xcconfig 	 = { 'FRAMEWORK_SEARCH_PATHS' => '"${PODS_ROOT}/UIView+Hierarchy"' }
-  s.framework  	 = "UIKit"
-  s.requires_arc = false
-
+  spec.platform     = :ios, "5.0"
+  
+  spec.requires_arc 	= false
+  spec.ios.framework 	= "UIKit"
+  spec.xcconfig 		= { "FRAMEWORK_SEARCH_PATHS" => "$(inherited)" }
+  
+  spec.source_files 			= "UIView+Hierarchy.framework/Headers/*.h"
+  spec.ios.vendored_frameworks 	= "UIView+Hierarchy.framework"
+  spec.preserve_paths 			= "UIView+Hierarchy.framework"
 end
