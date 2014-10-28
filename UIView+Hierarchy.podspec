@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   spec.name         = "UIView+Hierarchy"
-  spec.version      = "0.0.5"
-  spec.author       = { "Mike Shih" }
+  spec.version      = "0.0.6"
+  spec.author       = { "Mike Shih" => "mikefishs@yahoo.com.tw" }
   spec.license      = "MIT"
   spec.homepage     = "https://github.com/mike0116/UIView-Hierarchy"
   spec.source       = { :git => "https://github.com/mike0116/UIView-Hierarchy.git", :tag => s.version.to_s }
